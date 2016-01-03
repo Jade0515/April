@@ -135,3 +135,8 @@ nav ul li:last-child a {
 	border-top: 1px solid hsl(0, 0%, 60%);
 	padding: 15px 10px;
 }
+
+#articles article p {
+	line-height: 1.6em;
+	padding-bottom: 5px;
+}
