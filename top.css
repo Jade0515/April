@@ -3,8 +3,10 @@ body {
 	width: 100%;
 }
 
-body, header, section, footer, div {
+body, header, section, footer, div, p {
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 header {
@@ -24,7 +26,10 @@ header img {
 	float: left;
 }
 
-header span {
+header h1 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
 	float: left;
 	margin-left: 12px;
 	padding-top: 10px;
@@ -37,6 +42,21 @@ header span {
 	background-image: url(YSFJH.jpg);
 	background-size: cover;
 	background-position: 50% 100%;
+	position: relative;
+}
+
+#image::after {
+	content: 'サイエンスエリートを育成する(迫真)';
+	color: white;
+	letter-spacing: .1em;
+	font-size: 42px;
+	position: absolute;
+	top: 110px;
+	right: 0;
+	left: 0;
+	padding: 15px;
+	padding-left: 60px;
+	background-color: rgba(0, 0, 0, .26);
 }
 
 nav {
@@ -69,4 +89,49 @@ nav ul li a {
 
 nav ul li:last-child a {
 	border-right: none;
+}
+
+#side-menu {
+	float: left;
+	margin-top: 20px;
+	width: 20%;
+}
+
+#side-menu ul {
+	margin: 0;
+	margin-left: 20px;
+	padding: 0;
+	list-style-type: none;
+}
+
+#side-menu ul li {
+	margin-bottom: 4px;
+	padding: 8px;
+	font-size: 18px;
+	background-color: hsl(210, 80%, 45%);
+	color: white;
+}
+
+#articles {
+	float: left;
+	width: 80%;
+	margin-top: 20px;
+}
+
+#articles section {
+	padding: 0 20px;
+}
+
+#articles h2 {
+	margin: 0;
+	font-weight: normal;
+	padding: 2px;
+	padding-left: 8px;
+	border-left: 7px solid hsl(28, 100%, 50%);
+}
+
+#articles article {
+	margin-top: 10px;
+	border-top: 1px solid hsl(0, 0%, 60%);
+	padding: 15px 10px;
 }
