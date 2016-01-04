@@ -1,0 +1,179 @@
+body {
+	margin: 0; padding: 0;
+	width: 100%; height: 100%;
+	position: relative;
+	margin-bottom: 5em;
+}
+
+body, header, section, main, footer, div, p, h1, h2, h3 {
+	box-sizing: border-box;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+
+body>header {
+	width: 100%;
+	position: relative;
+	background-color: hsl(0, 100%, 100%);
+	border-bottom: 5px solid hsl(232, 53%, 37%);
+	padding: 8px;
+	overflow: hidden;
+	z-index: 114;
+	box-shadow: 0 2px 10px 6px rgba(100,100,100,.22);
+}
+
+body>header img {
+	width: 48px;
+	height: 48px;
+	float: left;
+}
+
+body>header h1 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	float: left;
+	margin-left: 12px;
+	padding-top: 10px;
+	font-size: 19px;
+	color: hsl(0, 0%, 40%);
+}
+
+#image {
+	height: 300px;
+	background-image: url(/YSFJH.jpg);
+	background-size: cover;
+	background-position: 50% 80%;
+	position: relative;
+}
+
+nav.global {
+	width: 100%;
+	background-color: hsl(232, 55%, 24%);
+}
+
+nav.global ul {
+	margin: 0 0;
+	padding: 0 0;
+	width: 100%;
+	display: table;
+	table-layout: auto;
+}
+
+nav.global ul li {
+	display: table-cell;
+}
+
+nav.global ul li a {
+	display: block;
+	margin: auto 0;
+	padding: 15px 10px;
+	margin: 10px;
+	border-right: 1px solid white;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+nav.global ul li:last-child a {
+	border-right: none;
+}
+
+nav.sub {
+	position: absolute;
+	margin-top: 20px;
+	width: 250px;
+}
+
+nav.sub ul {
+	margin: 0;
+	margin-left: 20px;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav.sub ul li {
+	margin-bottom: 8px;
+	padding: 8px;
+	font-size: 18px;
+	background-color: hsl(210, 80%, 45%);
+	color: white;
+}
+
+main {
+	position: absolute;
+	left: 250px;
+	right: 0;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+main header {
+	padding: 5px;
+	margin-bottom: 30px;
+	border-bottom: 5px solid hsl(232,80%,41%);
+}
+
+main header h1 {
+	display: inline-block;
+	font-size: 30px;
+	padding-left: 10px;
+}
+
+main header .last-update {
+	display: inline-block;
+	float: right;
+	font-size: 15px;
+	padding-right: 10px;
+	line-height: 40px;
+}
+
+main article {
+	padding: 0 30px;
+	margin-bottom: 10px;
+}
+
+main article header {
+	margin: 0 -10px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid gray;
+	margin-bottom: 12px;
+}
+
+main article header h1 {
+	display: inline-block;
+	font-weight: normal;
+	font-size: 22px;
+	border-left: 7px solid hsl(28, 100%, 50%);
+	padding: 2px;
+	padding-left: 10px;
+	margin: 0;
+}
+
+main article p {
+	line-height: 1.6em;
+	padding-bottom: 10px;
+}
+
+main article address {
+	display: inline-block;
+	vertical-align: top;
+	font-style: normal;
+	font-size: 18px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+main article iframe {
+	width: 600px;
+	height: 450px;
+	border: none;
+}
+
+footer {
+  bottom: 0;
+  height: 5em;
+  position: absolute;
+}
