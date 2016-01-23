@@ -82,9 +82,8 @@ nav.global ul li:last-child a {
 }
 
 .body {
+	display: table;
 	width: 100%;
-	max-width: 1040px;
-	padding-top: 20px;
 	margin: auto;
 }
 
@@ -94,10 +93,16 @@ nav.global ul li:last-child a {
 	display: block;
 }
 
-nav.sub {
+.column-left {
+	display: table-cell;
+	vertical-align: top;
 	padding: 0 10px 0;
-	float: left;
 	width: 25%;
+	background-color: hsl(188, 100%, 35%);
+}
+
+nav.sub {
+	float: right;
 }
 
 nav.sub .breadcrumb {
@@ -106,8 +111,10 @@ nav.sub .breadcrumb {
 
 nav.sub ul {
 	margin: 0;
-	margin-left: 20px;
 	padding: 0;
+	display: block;
+	margin-right: 0;
+	margin-left: auto;
 	list-style-type: none;
 }
 
@@ -148,11 +155,16 @@ nav.sub a:hover {
 	line-height: 40px;
 }
 
-.articles {
-	padding-top: 20px;
+.column-right {
+	display: table-cell;
+	vertical-align: top;
 	background-color: white;
-	float: left;
 	width: 75%;
+	padding: 20px;
+}
+
+.articles {
+	max-width: 960px;
 }
 
 .articles::after {
