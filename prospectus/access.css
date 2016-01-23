@@ -5,7 +5,7 @@ body {
 	margin-bottom: 5em;
 }
 
-body, header, section, main, footer, div, p, h1, h2, h3 {
+body, header, section, main, footer, div, p, ul, li, nav {
 	box-sizing: border-box;
 	font-weight: normal;
 	padding: 0;
@@ -41,7 +41,7 @@ body>header h1 {
 }
 
 #image {
-	height: 300px;
+	height: 150px;
 	background-image: url(/YSFJH.jpg);
 	background-size: cover;
 	background-position: 50% 80%;
@@ -81,10 +81,27 @@ nav.global ul li:last-child a {
 	border-right: none;
 }
 
+.body {
+	width: 100%;
+	max-width: 1040px;
+	padding-top: 20px;
+	margin: auto;
+}
+
+.body::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
 nav.sub {
-	position: absolute;
-	margin-top: 20px;
-	width: 250px;
+	padding: 0 10px 0;
+	float: left;
+	width: 25%;
+}
+
+nav.sub .breadcrumb {
+	border-bottom: 1px solid gray;
 }
 
 nav.sub ul {
@@ -95,34 +112,35 @@ nav.sub ul {
 }
 
 nav.sub ul li {
+	font-size: 18px;
+}
+
+nav.sub a {
 	margin-bottom: 8px;
 	padding: 8px;
-	font-size: 18px;
-	background-color: hsl(210, 80%, 45%);
-	color: white;
+	color: hsl(231, 25%, 80%);
+	text-decoration: none;
+	display: block;
 }
 
-main {
-	position: absolute;
-	left: 250px;
-	right: 0;
-	margin-top: 20px;
-	padding: 10px;
+nav.sub a:hover {
+	color: hsl(231, 25%, 100%);
 }
 
-main header {
+
+.body header {
 	padding: 5px;
 	margin-bottom: 30px;
 	border-bottom: 5px solid hsl(232,80%,41%);
 }
 
-main header h1 {
+.body header h1 {
 	display: inline-block;
 	font-size: 30px;
 	padding-left: 10px;
 }
 
-main header .last-update {
+.body header .last-update {
 	display: inline-block;
 	float: right;
 	font-size: 15px;
@@ -130,50 +148,52 @@ main header .last-update {
 	line-height: 40px;
 }
 
-main article {
+.articles {
+	padding-top: 20px;
+	background-color: white;
+	float: left;
+	width: 75%;
+}
+
+.articles::after {
+	overflow: hidden;
+}
+
+.articles article {
 	padding: 0 30px;
 	margin-bottom: 10px;
 }
 
-main article header {
+.articles article header {
 	margin: 0 -10px;
-	padding-bottom: 12px;
+	padding-bottom: 15px;
 	border-bottom: 1px solid gray;
-	margin-bottom: 12px;
+	margin-bottom: 15px;
 }
 
-main article header h1 {
+.articles article header h1 {
 	display: inline-block;
 	font-weight: normal;
-	font-size: 22px;
+	font-size: 24px;
 	border-left: 7px solid hsl(28, 100%, 50%);
 	padding: 2px;
 	padding-left: 10px;
 	margin: 0;
 }
 
-main article p {
-	line-height: 1.6em;
-	padding-bottom: 10px;
-}
-
-main article address {
+.articles article header .last-update {
 	display: inline-block;
-	vertical-align: top;
-	font-style: normal;
-	font-size: 18px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+	float: right;
+	font-size: 15px;
+	padding-right: 10px;
+	line-height: 40px;
 }
 
-main article iframe {
-	width: 600px;
-	height: 450px;
-	border: none;
+.articles article p {
+	line-height: 1.6em;
+	padding-bottom: 5px;
 }
 
 footer {
-  bottom: 0;
-  height: 5em;
-  position: absolute;
+	background-color: hsl(0, 0%, 0%);
 }
