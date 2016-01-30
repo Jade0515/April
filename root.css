@@ -48,23 +48,9 @@ body>header .header h1 {
 	position: relative;
 }
 
-#image::after {
-	content: '次代を担うグローバルリーダーを育成する';
-	color: white;
-	letter-spacing: .1em;
-	font-size: 42px;
-	position: absolute;
-	top: 110px;
-	right: 0;
-	left: 0;
-	padding: 15px;
-	padding-left: 60px;
-	background-color: rgba(0, 0, 0, .26);
-}
-
 nav.global {
 	width: 100%;
-	background-color: hsl(232, 55%, 24%);
+	background-color: hsl(208, 68%, 50%);
 }
 
 nav.global ul {
@@ -112,19 +98,24 @@ nav.global ul li:last-child a {
 	vertical-align: top;
 	padding: 0 10px 0;
 	width: 25%;
-	background-color: hsl(188, 100%, 35%);
+	background-color: hsla(217,86%,18%,1);
 }
 
 nav.sub {
 	float: right;
+	margin: 10px 0;
+	min-width: 200px;
 }
 
 nav.sub .breadcrumb {
+	color: white;
+	font-size: 20px;
+	padding: 8px;
 	border-bottom: 1px solid gray;
 }
 
 nav.sub ul {
-	margin: 0;
+	margin: 10px 0 0;
 	padding: 0;
 	display: block;
 	margin-right: 0;
@@ -148,6 +139,27 @@ nav.sub a:hover {
 	color: hsl(231, 25%, 100%);
 }
 
+
+.body header {
+	padding: 5px;
+	margin-bottom: 30px;
+	border-bottom: 5px solid hsl(208, 69%, 50%);
+}
+
+.body header h1 {
+	display: inline-block;
+	font-size: 30px;
+	padding-left: 10px;
+}
+
+.body header .last-update {
+	display: inline-block;
+	float: right;
+	font-size: 15px;
+	padding-right: 10px;
+	line-height: 40px;
+}
+
 .column-right {
 	display: table-cell;
 	vertical-align: top;
@@ -166,14 +178,14 @@ nav.sub a:hover {
 
 .articles article {
 	padding: 0 30px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 .articles article header {
 	margin: 0 -10px;
-	padding-bottom: 15px;
-	border-bottom: 1px solid gray;
-	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #B9B9B9;
+	margin-bottom: 10px;
 }
 
 .articles article header h1 {
@@ -181,7 +193,7 @@ nav.sub a:hover {
 	font-weight: normal;
 	font-size: 24px;
 	border-left: 7px solid hsl(28, 100%, 50%);
-	padding: 2px;
+	padding: 0px;
 	padding-left: 10px;
 	margin: 0;
 }

@@ -1,0 +1,29 @@
+body {
+	margin: 0; padding: 0;
+	width: 100%; height: 100%;
+	position: relative;
+	margin-bottom: 5em;
+}
+
+body, header, section, main, footer, div, p, ul, li, nav {
+	box-sizing: border-box;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+
+
+#image {
+	height: 150px;
+	background-position: 50% 80%;
+}
+
+#アクセス address {
+	float: left;
+	margin-right: 10px;
+}
+
+#アクセス iframe{
+	width: 640px;
+	height: 480px;
+}
