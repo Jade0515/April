@@ -1,2 +1,2 @@
 # ysfjhs
-http://junior.ysfh.sexy/home/index.html
+http://junior.ysfh.sexy/index.html
