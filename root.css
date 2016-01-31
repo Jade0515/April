@@ -5,7 +5,7 @@ body {
 	background-color: hsl(202, 59%, 100%);
 }
 
-body, header, section, main, footer, div, p, ul, li, nav {
+body, header, section, main, footer, div, p, ul, li, nav, h1, h2, h3 {
 	box-sizing: border-box;
 	font-weight: normal;
 	padding: 0;
@@ -96,7 +96,7 @@ nav.global ul li:last-child a {
 .column-left {
 	display: table-cell;
 	vertical-align: top;
-	padding: 0 10px 0;
+	padding: 0 15px 0;
 	width: 25%;
 	background-color: hsla(217,86%,18%,1);
 }
@@ -149,6 +149,7 @@ nav.sub a:hover {
 .body header h1 {
 	display: inline-block;
 	font-size: 30px;
+	margin: 15px 0;
 	padding-left: 10px;
 }
 
@@ -157,7 +158,8 @@ nav.sub a:hover {
 	float: right;
 	font-size: 15px;
 	padding-right: 10px;
-	line-height: 40px;
+	margin: 15px 0;
+	line-height: 45px;
 }
 
 .column-right {
