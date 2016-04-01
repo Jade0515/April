@@ -1,52 +1,43 @@
-<meta charset="utf-8" />
-<link rel="stylesheet" href="root.css" />
-<link rel="stylesheet" href="index.css" />
-<title>横浜市立横浜サイエンスフロンティア高等学校附属中学校</title>
+<html lang="ja">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <head>
+  <title>
+   YSFH SINE
+  </title>
+ </head>
+ <body>
+  <H1>YSFH SINE</H1>
+  <a href="http://www.city.yokohama.lg.jp/kyoiku/sidou2/koukou/sfh/" target = "_blank">
+  <img src="http://www.city.yokohama.lg.jp/kyoiku/sidou2/koukou/sfh/image/header.gif"></a>
+  <hr><br>
+  <div id="box">
+  <a href="" onclick="show(); return false;" target="_blank"><span style="color: red;">NEW!</span>平成28年度 クラス発表</a><br><br>
+  <a href="contents/" target="_blank">グループウェア</a><br><br>
+  <a href="chieru/lmsmainservlet" target="_blank">学習支援</a><br>
+  </div>
+  <br><hr>
+  &copy 2008-2015 City of Yokohama. All rights Reserved.
+<div id="login" style="display: none;">
+<p>あなたの次年度のクラスを確認できます。SINEネットワークのアカウントを使ってログインしてください。</p>
+ユーザーID：<input type="text" id="user"><br>
+パスワード：<input type="password"><br>
+<input type="button" onclick="tell();" value="クラスを確認する">
+</div>
+<script>
+function show() {
+	var el = document.getElementById("login").innerHTML;
+	document.getElementById('box').innerHTML = el;
+}
+function tell(){
+	
+	var cl = [1, 2, 3, 4, 5, 6];
+	cl = cl[Math.floor(Math.random() * cl.length)];
+	if (Math.floor(Math.random() * 50) == 0)
+		cl = 'ひまわり';
 
-<body>
-	<header>
-		<div class="header">
-			<img src="/symbol.png" alt="symbol">
-			<h1>横浜市立横浜サイエンスフロンティア高等学校附属中学校</h1>
-		</div>
-		<div id="image"></div>
-	</header>
-	<nav class="global">
-		<ul>
-			<li><a href="/index.html">ホーム</a></li>
-			<li><a href="/prospectus.html">学校案内</a></li>
-			<li><a href="/schoollife.html">学校生活</a></li>
-			<li><a href="/admission.html">入学案内</a></li>
-		</ul>
-	</nav>
-	<div class="body">
-		<div class="column-left">
-			<nav class="sub">
-			<p class="breadcrumb">ホーム</p>
-			<ul>
-				<li><a href="#新着情報">新着情報</a></li>
-				<li><a href="#警報発令時の対応">警報発令時の対応</a></li>
-				<li><a href="#よくある質問">よくある質問</a></li>
-			</ul>
-		</nav>
-		</div>
-		<div class="column-right">
-			<div class="articles">
-				<article id="新着情報">
-					<header>
-						<h1>新着情報</h1>
-						<p class="last-update">最終更新: <time pubdate="2016-1-4">2016年1月4日</time></p>
-					</header>
-					<p>(新着情報は)ないです。(新着)</p>
-					<p>
-						<span>文部科学省指定</span><br />
-						<span>「スーパーグローバルハイスクール(SGH))」</span><br />
-						<span>「スーパーサイエンスハイスクール(SSH)」</span><br />
-						<span>ってマジ?</span>
-					</p>
-				</article>
-			</div>
-		</div>
-	</div>
-	<footer>なんでもない</footer>
-</body>
+	document.getElementById('box').innerHTML = document.getElementById('user').value + 'さんのクラスは' + cl + '組です。';
+}
+
+</script>
+ </body>
+</html>
